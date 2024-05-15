@@ -1,0 +1,300 @@
+/* Estilos generales */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  }
+
+body{
+  background: rgb(246, 253, 254);
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/* Hacer todo el texto de los links negro y sin decoración */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Se formatea el contenedor "header" */
+.header{
+  width: 100%;
+  height: 37px;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imagen-logo{
+  width: 125px;
+  height: 37px;
+}
+
+/* Buscador */
+.buscador{
+  width: 100px; 
+  height: 18px;     
+  border: 2px solid grey;  
+  border-radius: 41px; 
+  padding-left: 10px;     
+}
+
+.iconUsuario{
+  width:20px;
+}
+
+.iconCarrito{
+  width:20px;
+}
+
+.lineaNaranja{
+  width: 100%;
+  height: 5px;
+  background-color: #F39200;
+}
+
+.anuncioSuperior{
+  width: 100%;
+  height: 94px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* Configuración para el carrusel */
+.carrusel{
+  width:90%;
+  max-width: 120em;
+  color: black;
+  overflow: hidden;
+  background-color: blanchedalmond;
+}
+
+/* Contenedor del carrusel*/
+.carrusel .contenedor-carrusel{
+  width:300%;
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: orange;
+  transition: all .5s ease;
+  transform: translate(0%);
+}
+
+.imgcarrusel{
+  max-width: 120em;
+  width:100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Se divide entre el número de imágenes del carrusel */
+.carrusel .img{
+  width: calc( 100% / 3 -2em);
+  min-height: 10vh; 
+  background-color: yellow;
+  padding: 2em;
+}
+
+.carrusel .puntos{
+  margin:1em 0 0;
+  width: 100%;
+  height: 5%;
+  background-color:#196C96;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel .punto{
+  width: 1em;
+  height: 1em;
+  background-color: blue;
+  margin: 1em;
+  list-style-type: none;
+  border-radius: 50%;
+}
+
+.carrusel .punto.activo{
+  background-color: aqua;
+}
+.products{
+  display: flex;
+  }
+
+/*  Configuración formulario */
+.contenedorimgformulario{
+  flex-wrap: wrap;
+   justify-content: space-around;  
+  background-image: url("imagenes/formularioFondo1.png");
+  height: 603px;
+  width:1440px;
+  background-repeat: no-repeat;
+  
+}
+.anuncioRegistro{
+    margin: 100px;
+    margin-top: 100px;
+    font-size: 35px;
+    
+}
+
+    
+.contenido-form{
+  border-color: gray;
+  border-radius: 41px; 
+  padding-left: 20px; 
+}
+
+.contenedorFormulario{
+    margin: 100px;
+    align-items: center;
+}
+
+/* Media query para desktop */
+@media (min-width:1024px){
+/* Se formatea el contenedor "header" */
+.header{
+  width: 100%;
+  height: 120px;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Buscador*/
+.buscador{
+  width: 496px; 
+  height: 53px;     
+  border: 2px solid grey;  
+  border-radius: 41px; 
+  padding-left: 20px;     
+}
+
+.lineaNaranja{
+  width: 100%;
+  height: 9px;
+  background-color: #F39200;
+}
+
+.anuncioSuperior{
+  width: 100%;
+  height: 145px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* Configuración para el carrusel */
+.carrusel{
+  width:90%;
+  max-width: 120em;
+  padding: 2em;
+  color: black;
+  overflow: hidden;
+  background-color: blanchedalmond;
+}
+
+/* Contenedor del carrusel*/
+/* .carrusel .contenedor-carrusel{
+  width:300%;
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: orange;
+  transition: all .5s ease;
+  transform: translate(0%);
+}
+
+.imgcarrusel{
+  max-width: 120em;
+  width:100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Se divide entre el número de imágenes del carrusel */
+.carrusel .img{
+  width: calc( 100% / 3 -2em);
+  min-height: 10vh; 
+  background-color: yellow;
+  padding: 2em;
+}
+
+.carrusel .puntos{
+  padding: 1em;
+  margin:1em 0 0;
+  width: 100%;
+  background-color: rebeccapurple;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel .punto{
+  width: 1em;
+  height: 1em;
+  background-color: blue;
+  margin: 1em;
+  list-style-type: none;
+  border-radius: 50%;
+}
+
+.carrusel .punto.activo{
+  background-color: aqua;
+}
+.products{
+  display: flex;
+  }
+
+/*  Configuración formulario */
+.contenedorimgformulario{
+  flex-wrap: wrap;
+  /* justify-content: space-around;  */
+  background-image: url("imagenes/formularioFondo1.png");
+  height: 603px;
+  width:1440px;
+  background-repeat: no-repeat;
+  
+}
+.anuncioRegistro{
+    margin: 100px;
+    margin-top: 100px;
+    
+}
+.btn{}
+    
+
+
+.contenido-form{
+  border-color: gray;
+  border-radius: 41px; 
+  padding-left: 20px; 
+}
+
+.contenedorFormulario{
+    margin: 100px;
+}
+
+} */

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="icon" type="image/png" href="imagenes/icon.png" />
+      <title> SportLife </title>
+  </head>
+  <body>
+    <!-- Contenedor para el encabezado que tendrá el logo, buscador e iconos-->
+    <div class="header">
+      <img class= "imagen-logo"src="imagenes/sportlife.png" alt="logo">
+      
+      <!-- Buscador  -->
+      <input class="buscador" type="text" id="name" name="¿Que estas buscando?" placeholder="Buscar">
+
+      <!-- Contenedor de los iconos usuario y carrito  -->
+      <div class="contenedorUsuario">
+          <img class="iconUsuario" src="imagenes/usuario.png" alt="usuario"  > 
+          <img class="iconCarrito" src="imagenes/carrito.png" alt="carrito" >
+      </div>       
+    </div>
+
+    <!-- Creación linea de división  -->
+    <div class="lineaNaranja"></div>
+  
+    <!-- Creación de frase inicio -->
+    <div class="anuncioSuperior">
+      <h2 >Vístete bien, hoy tienes una cita con el deporte</h2><h1>¡Marca tu estilo!</h1>
+    </div>
+
+    <!-- Inicio código para carrusel -->
+    <div class="carrusel">
+      <div class="contenedor-carrusel">
+        <img src="imagenes/yoga-wheel.jpg" alt="WheelYoga" class="imgcarrusel">
+        <img src="imagenes/yogamat.jpeg" alt="MatYoga" class="imgcarrusel">
+        <img src="imagenes/yogamat.jpeg" alt="MatYoga" class="imgcarrusel">
+      </div>
+      <ul class="puntos">
+        <li class="punto"></li>
+        <li class="punto"></li>
+        <li class="punto"></li>
+      </ul>
+    </div>
+    
+    <!-- Inicio código productos destacados
+    <div class="products">
+      <div class="product1">
+        <h2>Rueda de yoga</h2>
+        <img src="imagenes/yoga-wheel.jpg" alt="WheelYoga">
+        
+      </div>
+      <div class="product2">
+        <h2>Mat de yoga</h2>
+        <img src="imagenes/yogamat.jpeg" alt="MatYoga">
+      </div>
+      <div class="product3">
+        <h2>Conjunto deportivo</h2>
+        <img src="imagenes/ConjuntoYoga.jpg" alt="ConjuntoYoga">
+
+      </div>
+      <div class="product4">
+        <h2>Conjunto short</h2>
+        <img src="imagenes/Conjunto.jpeg" alt="Conjunto">
+      </div>
+    </div> -->
+
+    <!-- Definición del formulario de registro -->
+    <form action="https://formspree.io/f/xdoqjypb" method="POST">
+
+    <div class="contenedorimgformulario">
+
+      <div class="anuncioRegistro">
+        <h2 class="bold"> Confía en tu intuicion</h2> 
+        <h1 class="light"> Registrate </h1>
+      </div>
+
+      <div class="contenedorFormulario">
+        
+        <div class="nombresyapellidos">
+          <input class="contenido-form" type="text" name="nombres" id="nombres" placeholder="Nombre Completo">
+        </div>
+        <div class="email">
+          
+          <input class="contenido-form" type="email" name="email" id="email" placeholder="Correo Electronico">
+        </div>
+        <div class="elegirproductos">
+          
+          <select name="productos" id="producto">
+            <option value="1">Conjuntos</option>
+            <option value="2">Mancuernas</option>
+            <option value="3">Mat</option>
+            <option value="4">Rueda de yoga</option>
+          </select>
+        </div>
+        <div class="btn">
+          <button type="submit">Enviar</button>
+      </div>
+    </div>
+    
+    
+    </div>
+    </form>
+    <script src="app.js"></script>    
+  </body>
+</html>
