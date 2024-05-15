@@ -19,6 +19,7 @@ punto.forEach((cadaPunto,i)=>{
     punto[i].classList.add('activo');
   })
 })
+
 let infoDatos = [{}]
 
 function obtenerDatos(){

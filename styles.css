@@ -64,9 +64,23 @@ a {
 
 .anuncioSuperior{
   width: 100%;
-  height: 94px;
+  height: 100px;
   text-align: center;
   padding-top: 40px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 5px;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 5px;
+  margin: 10px 0;
+  line-height: 1.2;
 }
 
 /* Configuración para el carrusel */
@@ -84,7 +98,6 @@ a {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
   background-color: orange;
   transition: all .5s ease;
   transform: translate(0%);
@@ -137,7 +150,7 @@ a {
 /*  Configuración formulario */
 .contenedorimgformulario{
   flex-wrap: wrap;
-   justify-content: space-around;  
+  justify-content: space-around;  
   background-image: url("imagenes/formularioFondo1.png");
   height: 603px;
   width:1440px;
