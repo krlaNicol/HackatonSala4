@@ -23,7 +23,7 @@ let infoDatos = [{}]
 
 function obtenerDatos(){
     let name= document.getElementById("nombres")
-    let correo= document.getElementById("coreo")
+    let correo= document.getElementById("email")
     let comentario= document.getElementById("producto")
     infoDatos.push({nombre: name.value, correo:correo.value, comentario: comentario.value})
     console.log(infoDatos);
