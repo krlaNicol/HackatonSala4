@@ -275,9 +275,6 @@ h2 {
 .carrusel .punto.activo{
   background-color: aqua;
 }
-.products{
-  display: flex;
-  }
 
 /*  Configuración formulario */
 .contenedorimgformulario{
@@ -308,4 +305,4 @@ h2 {
     margin: 100px;
 }
 
-} */
+} 
